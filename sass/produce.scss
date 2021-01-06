@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import "./base.scss";
+
+.nav {
+  height: 80px;
+  position: relative;
+  background-color: #293e31;
+
+  &__bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+  }
+  &__toggle {
+    display: none;
+  }
+  &__container {
+    display: flex;
+  }
+  &__close {
+    display: none;
+    width: 31px;
+    height: 29px;
+  }
+  // &__expland {
+  // }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 13px;
+    line-height: 50px;
+    font-family: "Raleway", sans-serif;
+  }
+  &__link:hover,
+  &__link.activ {
+    color: rgba(254, 131, 64, 1);
+    transition: 0.5s;
+  }
+  &__link_bottom {
+    margin: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 70px;
+    font-size: 13px;
+    line-height: 50px;
+  }
+  &__link_bottom:hover {
+    color: rgba(254, 131, 64, 1);
+    transition: 0.5s;
+  }
+  &__first {
+    background-color: rgba(254, 131, 64, 1);
+    left: 0;
+    position: absolute;
+    width: 500px;
+    height: 100%;
+  }
+}
+.text_first {
+  letter-spacing: 0.05em;
+  color: rgba(41, 62, 49, 1);
+  font-size: 28px;
+  font-family: "MuseoModerno", cursive;
+  position: absolute;
+  left: 19px;
+  margin-top: 8px;
+}
+.text_second {
+  font-size: 16px;
+  color: rgba(41, 62, 49, 1);
+  letter-spacing: 0.1em;
+  position: absolute;
+  left: 20px;
+  font-family: "Raleway", sans-serif;
+  top: 40px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgba(41, 62, 49, 1);
+  margin-right: 116px;
+  &__svg {
+    color: rgba(41, 62, 49, 1);
+    width: 26px;
+    border-radius: 20px;
+  }
+  &__active {
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 22px;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: rgba(254, 131, 64, 1);
+  }
+  &__active:hover {
+    color: rgb(233, 184, 158);
+    transition: 0.5s;
+  }
+}
+.target {
+  cursor: pointer;
+  position: fixed;
+  height: 80px;
+  z-index: 100;
+  width: 116px;
+  background: rgba(254, 131, 64, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  text-decoration: none;
+  &__left {
+    width: 62px;
+    height: 57px;
+  }
+  &__span {
+    font-size: 10px;
+    line-height: 14px;
+    color: rgba(41, 62, 49, 1);
+    font-family: "Raleway", sans-serif;
+    transform: rotate(90deg);
+  }
+  &__form {
+    display: none;
+    background-color: rgba(41, 62, 49, 1);
+    position: fixed;
+    width: 708px;
+    height: 100%;
+    right: 0;
+    color: #fcf9f4;
+    z-index: 100;
+    padding: 70px;
+  }
+  &__form.act {
+    display: block;
+  }
+  &__close {
+    margin: 0 0 70px 0;
+  }
+  &__closesvg {
+    width: 31px;
+    height: 29px;
+  }
+  &__title {
+    width: 300px;
+    font-size: 32px;
+    color: #fe8340;
+    font-family: "MuseoModerno", cursive;
+  }
+  &__formblock {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  &__inputtext {
+    width: 50%;
+    padding: 10px;
+  }
+  &__label {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgb(254, 131, 64);
+    font-family: "Raleway", sans-serif;
+    margin: 10px 0;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    border: 2px solid #fe8340;
+    padding: 15px 25px 15px 25px;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgb(254, 131, 64);
+    font-family: "Raleway", sans-serif;
+    background-color: rgba(41, 62, 49, 1);
+  }
+  &__input:focus {
+    outline: none;
+  }
+  &__radioblock {
+    padding: 20px;
+    width: 100%;
+    border: 2px solid #fe8340;
+    margin: 10px;
+  }
+  &__group {
+    color: rgb(254, 131, 64);
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Raleway", sans-serif;
+    margin: 0 0 17px 0;
+  }
+  &__inputradio {
+    margin: 17px;
+  }
+  &__labelradio {
+    color: rgb(254, 131, 64);
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Raleway", sans-serif;
+    padding-left: 10px;
+    position: relative;
+    padding-left: 32px;
+  }
+  &__radio {
+    display: none;
+  }
+  &__labelradio:after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #fe8340;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  &__labelradio:before {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    background: transparent;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+  }
+  &__radio:checked + &__labelradio::before {
+    background: #fe8340;
+  }
+  &__btn {
+    margin: 0 auto;
+  }
+  &__btntext {
+    outline: none;
+    margin: 15px;
+    text-align: center;
+    padding: 15px 70px;
+    background-color: rgb(254, 131, 64);
+    color: rgba(41, 62, 49, 1);
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Raleway", sans-serif;
+  }
+  &__btntext:hover {
+    background-color: rgba(41, 62, 49, 1);
+    color: rgb(254, 131, 64);
+  }
+}
+::-webkit-input-placeholder {
+  color: rgb(254, 131, 64);
+}
+.titles {
+  width: 100%;
+  height: 360px;
+  background-color: #293e31;
+  padding: 80px 0;
+  &__cont {
+    margin: 0 auto;
+    width: 986px;
+  }
+  &__h2 {
+    font-size: 32px;
+    font-family: "MuseoModerno", cursive;
+    color: #fcf9f4;
+  }
+  &__p {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    color: #fcf9f4;
+  }
+}
+
+.wrapper {
+  margin: auto;
+  position: relative;
+  top: -250px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 986px;
+  &__first {
+    width: calc(50% - 50px);
+    margin-bottom: 40px;
+  }
+  &__img {
+    padding-bottom: 40px;
+  }
+  &__season {
+    padding-top: 40px;
+    font-size: 32px;
+    color: #293e31;
+    font-family: "MuseoModerno", cursive;
+  }
+  &__season:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 89px;
+    background: #293e31;
+    position: absolute;
+    margin: 12px 5px;
+  }
+}
+.slideshow-container {
+  overflow: hidden;
+  max-width: 448px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.mySlides {
+  display: none;
+}
+.mySlides.active {
+  display: block;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.blog {
+  background-color: rgb(218, 206, 194);
+  padding: 150px 0 0;
+  width: 100%;
+  position: relative;
+  &__contact {
+    width: 1050px;
+    height: 296px;
+    background-color: #fcf9f4;
+    position: absolute;
+    bottom: -150px;
+    left: calc(50% - 525px);
+    display: flex;
+    z-index: 1;
+    padding: 60px 80px;
+  }
+  &__p {
+    font-size: 21px;
+    line-height: 29px;
+    font-family: "MuseoModerno", cursive;
+    color: #414141;
+    display: flex;
+  }
+  &__h2 {
+    font-size: 21px;
+    line-height: 29px;
+    font-family: "MuseoModerno", cursive;
+    color: #a9422b;
+    padding: 0 20px;
+    border-left: 2px solid #aaaaaa;
+    width: calc(100% / 3);
+  }
+  &__h2:first-child {
+    border-left: none;
+  }
+  &__title {
+    padding-bottom: 20px;
+  }
+}
+.soc {
+  background-color: #293e31;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+
+  &__text {
+    padding-top: 22px;
+    line-height: 1.4em;
+    font-size: 21px;
+    font-family: "MuseoModerno", cursive;
+    color: #fcf9f4;
+  }
+  &__form {
+    margin-left: 40px;
+  }
+  &__email {
+    width: 461px;
+    height: 50px;
+    color: #fcf9f4;
+    font-size: 21px;
+    line-height: 29px;
+    font-family: "MuseoModerno", cursive;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: rgba(41, 62, 49, 1);
+    border: 1px solid #fcf9f4;
+  }
+  &__email:hover {
+    border: 1px solid rgba(254, 131, 64, 1);
+  }
+  &__btn {
+    width: 194px;
+    height: 50px;
+    margin-left: 20px;
+    color: #293e31;
+    font-size: 21px;
+    line-height: 29px;
+    font-family: "MuseoModerno", cursive;
+  }
+  &__btn:hover {
+    background-color: rgba(254, 131, 64, 1);
+  }
+  &__enter {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "Raleway", sans-serif;
+    color: #fe8340;
+    padding-bottom: 8px;
+  }
+}
+.footer {
+  background-color: #293e31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__links {
+    margin: 0 100px;
+  }
+  &__link {
+    font-size: 33px;
+    color: #fe8340;
+    font-family: "MuseoModerno", serif;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+.year {
+  background-color: #293e31;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  &__p {
+    font-size: 14px;
+    color: #fe8340;
+    font-family: "Raleway", sans-serif;
+  }
+}
+@import "./mobile.scss";

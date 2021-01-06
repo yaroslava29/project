@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav class="nav__bar">
+                <button class="nav__toggle" id="toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                >
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                    d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                    />
+                </svg>
+                </button>
+                <div class="nav__first">
+                    <p class="text_first">Deerfield Farm</p>
+                    <p class="text_second">Season’s Best</p>
+                </div>
+                <div class="nav__container" id="navigation">
+                    <div class="nav__close" onclick="closeBurgerForm()">
+                        <img src="./svg/close.svg" alt="">
+                    </div>
+                <ul class="nav__item">
+                    <li><a href="./index.html" class="nav__link activ">Home</a></li>
+                    <li><a href="./about.html" class="nav__link">About</a></li>
+                    <li><a href="./produce.html" class="nav__link">Our Produce</a></li>
+                    <li><a href="./blog.html" class="nav__link">Blog</a></li>
+                    <li><a href="./contact.html" class="nav__link_bottom">Contact Us</a></li>
+                </ul>
+                
+                <a class="form" href="./sign.html">
+                    <img class="form__svg" src="./svg/person_outline-black-18dp.svg" alt="">
+                    <span class="form__active">Log In</span>
+                </a>
+                </div>
+                <div class="target" onclick="showTargetForm()">
+                    <img class="target__left" src="./svg/target.svg" alt="">
+                    <span class="target__span">JOIN US</span>
+                </div>
+            <div class="target__form">
+            <div class="target__close" onclick="closeTargetForm()"><img src="./svg/close.svg" alt="" class="target__closesvg"></div>
+            <div class="target__title">Join Our Farm CSA Program
+            </div>
+            <form class="target__formblock">
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your First Name</label>
+                <input class="target__input" placeholder="First Name"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Last Name</label>
+                <input class="target__input"placeholder="Last Name"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Email *</label>
+                <input type="email" placeholder="Your Email" class="target__input" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Phone</label>
+                <input class="target__input"placeholder="Your Phone"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your City</label>
+                <input class="target__input"placeholder="Your City" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your State</label>
+                <input type="text" class="target__input" placeholder="Your State"/>
+              </div>
+              <div class="target__radioblock">
+                <div class="target__group">Choose the package that Fits your Family *</div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar1" class="target__radio" name="radioform" value="1" />
+                  <label for="contacttar1" class="target__labelradio">Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar2" class="target__radio" name="radioform" value="2"/>
+                  <label for="contacttar2" class="target__labelradio">Bi-Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar3" class="target__radio" name="radioform" value="3"/>
+                  <label for="contacttar3" class="target__labelradio">Wholesome Family Package</label>
+                </div>
+              </div>
+              <div class="target__btn">
+              <button class="target__btntext">Submit</button>
+            </div>
+            </form>
+          </div>
+            </nav>
+        </div>
+        <div class="slideshow-container">
+            <div class="slide_inform">
+            <h1 class="slide_text">Welcome</br>to Our Farm</h1>
+            <p class="slide_p">Fresh | Organic | Local</p>
+            <a class="slide_btn" href="">Learn More</a>
+        </div>
+            <div class="mySlidesOne">
+                <img class="picture" src="https://static.wixstatic.com/media/ad420a_66bb032f4e6e4ab6adf8d2642f5000e0~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_1903,h_750,al_c,q_85,usm_0.66_1.00_0.01/ad420a_66bb032f4e6e4ab6adf8d2642f5000e0~mv2_d_5472_3648_s_4_2.webp"
+                   >
+            </div>
+        
+            <div class="mySlidesOne">
+                        <img class="picture" src="https://static.wixstatic.com/media/ad420a_504f6c7af23a40d096817ce8903c6c5e~mv2_d_6240_4160_s_4_2.jpg/v1/fill/w_1903,h_750,al_c,q_85,usm_0.66_1.00_0.01/ad420a_504f6c7af23a40d096817ce8903c6c5e~mv2_d_6240_4160_s_4_2.webp"
+                    >
+                    </div>
+        
+            <div class="mySlidesOne">
+                <img class="picture" src="https://static.wixstatic.com/media/ad420a_49acd0b6db4e4e58a2f753c9abcb2e10~mv2_d_3818_2546_s_4_2.jpg/v1/fill/w_1903,h_750,al_c,q_85,usm_0.66_1.00_0.01/ad420a_49acd0b6db4e4e58a2f753c9abcb2e10~mv2_d_3818_2546_s_4_2.webp"
+                    >
+            </div>
+        
+            <div class="mySlidesOne">
+                <img class="picture" src="https://static.wixstatic.com/media/ad420a_35126ea55d8249c08c638a8478dada30~mv2_d_4032_3024_s_4_2.jpg/v1/fill/w_1903,h_750,al_c,q_85,usm_0.66_1.00_0.01/ad420a_35126ea55d8249c08c638a8478dada30~mv2_d_4032_3024_s_4_2.webp"
+                    >
+                    </div>
+             <div class="click__line">
+            <span class="click"></span>
+            <span class="click"></span>
+            <span class="click"></span>
+            <span class="click"></span>
+            </div>
+        </div>
+        <div class="support">
+            <div class="support__left">
+                <div class="support__left_container">
+          <h2 class="support__text">Support Sustainable</br>
+        Farming</h2>
+        <p class="support__p">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to
+        add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a
+        little more about you.</p>
+                <a href="" class="support__btn">Join Our CSA</a>
+        </div>
+        </div>
+        <div class="support__right"><img src="./svg/third.svg" class="support__svg" alt=""></div>
+        </div>
+        <div class="produce">
+       <div class="produce__window">
+           <h2 class="produce__name">Season's Produce</h2>
+           <img src="./svg/produce.svg" alt="" class="produce__svg">
+        <div class="produce__slideshow">
+                <div class="myChanges">
+                <img src="https://static.wixstatic.com/media/ad420a_1aea1201836842eba1bdf6ac42d40cbc~mv2_d_3965_2832_s_4_2.jpg/v1/fill/w_610,h_506,al_c,q_80,usm_0.66_1.00_0.01/ad420a_1aea1201836842eba1bdf6ac42d40cbc~mv2_d_3965_2832_s_4_2.webp"
+                    >
+            </div>
+        
+            <div class="myChanges">
+                <img src="https://static.wixstatic.com/media/ad420a_5dd3d63b5f4f49398d13209bcafe224c~mv2_d_7952_5304_s_4_2.jpg/v1/fill/w_610,h_506,al_c,q_80,usm_0.66_1.00_0.01/ad420a_5dd3d63b5f4f49398d13209bcafe224c~mv2_d_7952_5304_s_4_2.webp"
+                    >
+            </div>
+        
+            <div class="myChanges">
+                <img src="https://static.wixstatic.com/media/ad420a_47ee5a5bac624a0cb441faedf520d087~mv2_d_2500_1662_s_2.jpg/v1/fill/w_610,h_506,al_c,q_80,usm_0.66_1.00_0.01/ad420a_47ee5a5bac624a0cb441faedf520d087~mv2_d_2500_1662_s_2.webp"
+                    >
+            </div>
+        
+            <div class="myChanges">
+                <img src="https://static.wixstatic.com/media/ad420a_e81aec82b4424063987c956089bb60d8~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_610,h_506,al_c,q_80,usm_0.66_1.00_0.01/ad420a_e81aec82b4424063987c956089bb60d8~mv2_d_6000_4000_s_4_2.webp"
+                    >
+                    </div>
+            <div class="start__line">
+                <span class="start"></span>
+                <span class="start"></span>
+                <span class="start"></span>
+                <span class="start"></span>
+            </div>
+        </div>
+    </div>
+       
+           <a class="produce__btn" href="">View All Produce</a>
+               </div>
+        <div class="green">
+            <div class="green__left">
+                <div class="green__img_left">
+                    <img src="https://static.wixstatic.com/media/ad420a_a28d302b2cba4d88adeb9bc4f4692d3d~mv2_d_5700_3804_s_4_2.jpg/v1/fill/w_488,h_335,al_c,q_80,usm_0.66_1.00_0.01/GettyImages-916358088.webp" alt="">
+                </div>
+            </div>
+            <div class="green__right">
+                <div class="green__img_right">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="blog__fotos">
+                <h2 class="blog__name">From Our Blog</h2>
+                <div class="blog__items">
+                    <div class="blog__item">
+                        <img src="https://static.wixstatic.com/media/ad420a_a6917e35f02241c4801a874aab820004~mv2_d_4896_2754_s_4_2.jpg/v1/fit/w_294,h_165,al_c,q_80/file.webp" alt="" class="item__first">
+                       <div class="blog__list"> 
+                           <p class="item__text">New in the Basket: Seasonal Additions</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                                <!-- <span class="item__likecounter">1</span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="https://static.wixstatic.com/media/ad420a_04601c61916d4f2aa921752f35c7b4bd~mv2_d_5334_4000_s_4_2.jpg/v1/fit/w_290,h_218,al_c,q_80/file.webp" alt="" class="item__first">
+                       <div class="blog__list"> 
+                           <p class="item__text">Crispy Kale Salad</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img src="https://static.wixstatic.com/media/ad420a_bc9e0090ba934790aa23d055e3299caa~mv2_d_5472_3648_s_4_2.jpg/v1/fit/w_290,h_194,al_c,q_80/file.webp" alt="" class="item__first">
+                       <div class="blog__list"> 
+                           <p class="item__text">Urban Garden Workshop</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__batton">
+                <a class="blog__btn" href="">See More</a>
+                </div>
+            </div>
+            <div class="blog__contact">
+                               <div class="blog__h2"> 
+                   <p class="blog__p"> 500 Terry Francois Street
+                                San Francisco, CA 94158
+                                info@mysite.co</br>
+                                Tel: 123-456-7890</br>
+                                Fax: 123-456-7890</p> </div>
+                <div class="blog__h2">
+                    <div class="blog__title">Opening Hours</div>
+                    <p class="blog__p">                
+                Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm
+                </p>
+            </div>
+                <div class="blog__h2"><div class="blog__title">Delivery Hours</div>
+                <p class="blog__p">Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm</p>
+                </div>
+            </div>
+         </div>
+        <div class="soc">
+                      <h3 class="soc__text">Get the Latest News & </br>Updates from Our Farm</h3>
+            <form class="soc__form">
+           <p class="soc__enter">Enter your email here* *</p>
+            <input type="email" placeholder="Email" class="soc__email" />
+            <button class="soc__btn">Join</button>
+           </form> 
+        
+                </div>
+                <div class="footer">
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://twitter.com" target="_blank">TWITTER</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+                    </p>
+                </div>
+                <div class="year">
+                    <p class="year__p">© 2023 by Deerfield Farm. Proudly created with <a style="color: #fe8340;" href="https://uk.wix.com/" target="_blank" >Wix.com</a> </p>
+                </div>
+
+
+    </div>
+    <script src="./js/slideshow.js"></script>
+    <script src="./js/all.js"></script>
+</body>
+
+</html>

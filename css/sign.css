@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  color: #1f1f1f;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  margin: 200px;
+}
+.sign__form {
+  height: 427px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign__name {
+  font-size: 48px;
+  line-height: 48px;
+  color: #414141;
+  font-family: "MuseoModerno", cursive;
+  padding-bottom: 20px;
+}
+.sign__oneblock {
+  display: flex;
+}
+.sign__text {
+  font-size: 18px;
+  line-height: 25px;
+  color: #414141;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 50px;
+  padding-right: 10px;
+}
+.sign__link {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fe8340;
+  font-family: "Raleway", sans-serif;
+}
+.sign__email {
+  border: 1px solid #8d8d8d;
+  padding: 10px 40px;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+}
+.sign__email_href {
+  text-decoration: none;
+  font-size: 18px;
+  color: #414141;
+  font-family: "Raleway", sans-serif;
+}
+.sign__email:hover {
+  border: 1px solid #414141;
+}
+.sign__fbgoogle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.sign__fb {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  margin-bottom: 24px;
+  background-color: #3b5998;
+}
+.sign__fb_img {
+  width: 30px;
+}
+.sign__googl {
+  display: flex;
+  align-items: center;
+  background-color: #4285f4;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.sign__gl_img {
+  width: 30px;
+}
+.sign__an {
+  padding-left: 50px;
+  line-height: 48px;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+}
+.sign__aft {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 13px;
+  font-size: 16px;
+  color: #414141;
+}
+.sign__aft:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 130px;
+  background: #414141;
+  margin: 10px 20px;
+}
+.sign__aft:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 130px;
+  background: #414141;
+  margin: 10px 20px;
+}
+.sign__span {
+  font-size: 16px;
+  line-height: 22px;
+  color: #414141;
+  font-family: "Raleway", sans-serif;
+}
+.sign__terms {
+  font-size: 15px;
+  line-height: 24px;
+  color: #414141;
+  font-family: "Raleway", sans-serif;
+}
+.sign__terms_a {
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #414141;
+}
+
+/*# sourceMappingURL=sign.css.map */

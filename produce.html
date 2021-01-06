@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/produce.css">
+  </head>
+  <body >
+      <div class="container">
+      <div class="nav">
+            <nav class="nav__bar">
+                <button class="nav__toggle" id="toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                >
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                    d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                    />
+                </svg>
+                </button>
+                <div class="nav__first">
+                    <p class="text_first">Deerfield Farm</p>
+                    <p class="text_second">Season’s Best</p>
+                </div>
+                <div class="nav__container" id="navigation">
+                    <div class="nav__close" onclick="closeBurgerForm()"> 
+                        <img src="./svg/close.svg" alt="">
+                    </div>
+                <ul class="nav__item">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li><a href="./about.html" class="nav__link ">About</a></li>
+                    <li><a href="./produce.html" class="nav__link activ">Our Produce</a></li>
+                    <li><a href="./blog.html" class="nav__link">Blog</a></li>
+                    <li><a href="./contact.html" class="nav__link_bottom">Contact Us</a></li>
+                </ul>
+          <a class="form" href="./sign.html">
+            <img
+              class="form__svg"
+              src="./svg/person_outline-black-18dp.svg"
+              alt=""
+            />
+            <span class="form__active">Log In</span>
+          </a>
+          </div>
+          <div class="target" onclick="showTargetForm()">
+            <img class="target__left" src="./svg/target.svg" alt="" />
+            <span class="target__span">JOIN US</span>
+          </div>
+          <div class="target__form">
+            <div class="target__close" onclick="closeTargetForm()"><img src="./svg/close.svg" alt="" class="target__closesvg"></div>
+            <div class="target__title">Join Our Farm CSA Program
+            </div>
+            <form class="target__formblock">
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your First Name</label>
+                <input class="target__input" placeholder="First Name"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Last Name</label>
+                <input class="target__input"placeholder="Last Name"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Email *</label>
+                <input type="email" placeholder="Your Email" class="target__input" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Phone</label>
+                <input class="target__input"placeholder="Your Phone"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your City</label>
+                <input class="target__input"placeholder="Your City" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your State</label>
+                <input type="text" class="target__input" placeholder="Your State"/>
+              </div>
+              <div class="target__radioblock">
+                <div class="target__group">Choose the package that Fits your Family *</div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar1" class="target__radio" name="radioform" value="1" />
+                  <label for="contacttar1" class="target__labelradio">Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar2" class="target__radio" name="radioform" value="2"/>
+                  <label for="contacttar2" class="target__labelradio">Bi-Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar3" class="target__radio" name="radioform" value="3"/>
+                  <label for="contacttar3" class="target__labelradio">Wholesome Family Package</label>
+                </div>
+              </div>
+              <div class="target__btn">
+              <button class="target__btntext">Submit</button>
+            </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="titles">
+        <div class="titles__cont">
+                  <h2 class="titles__h2">This Season's Produce</h2>
+                  <p class="titles__p">Everything we grow is organic and changes seasonally</p>
+              </div>
+              </div>
+      <div class="blog">
+        <div class="wrapper">
+          <div class="wrapper__first">
+            <div class="wrapper__img">
+              <div class="slideshow-container">
+                <div class="mySlides mySlides-1 fade active">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_ec5952a73d0a4fbba1ddf542f0aefa81~mv2_d_2401_2000_s_2.jpg/v1/fill/w_448,h_447,fp_0.46_0.49,q_90/ad420a_ec5952a73d0a4fbba1ddf542f0aefa81~mv2_d_2401_2000_s_2.webp"
+                  />
+                </div>
+
+                <div class="mySlides mySlides-1 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_21cad799467a453bba7785fdb6b3e694~mv2_d_2338_1590_s_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_21cad799467a453bba7785fdb6b3e694~mv2_d_2338_1590_s_2.webp"
+                  />
+                </div>
+
+                <div class="mySlides mySlides-1 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_dd27ea88b63b452788c0ac08f6830ce0~mv2_d_3936_2624_s_4_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_dd27ea88b63b452788c0ac08f6830ce0~mv2_d_3936_2624_s_4_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-1 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_5dd3d63b5f4f49398d13209bcafe224c~mv2_d_7952_5304_s_4_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_5dd3d63b5f4f49398d13209bcafe224c~mv2_d_7952_5304_s_4_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-1 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_59d43270c1b1463fa5e7780a0fb81f18~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_59d43270c1b1463fa5e7780a0fb81f18~mv2_d_5760_3840_s_4_2.webp"
+                  />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,'1')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, '1')">&#10095;</a>
+              </div>
+              <h2 class="wrapper__season">Autunm</h2>
+            </div>
+          </div>
+          <div class="wrapper__first">
+            <div class="wrapper__img">
+              <div class="slideshow-container">
+                <div class="mySlides mySlides-2 fade active">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_6aaef85bf6774cb0a905da973cff61e8~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_6aaef85bf6774cb0a905da973cff61e8~mv2_d_6000_4000_s_4_2.webp"
+                  />
+                </div>
+
+                <div class="mySlides mySlides-2 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_6bf65c80bef246ed82af0b1c747f70ff~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_6bf65c80bef246ed82af0b1c747f70ff~mv2_d_6000_4000_s_4_2.webp"
+                  />
+                </div>
+
+                <div class="mySlides mySlides-2 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_78bfa6b8af174abb934e16d02eafacbe~mv2_d_1734_2131_s_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_78bfa6b8af174abb934e16d02eafacbe~mv2_d_1734_2131_s_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-2 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_312735f74ee74be59c8a2452150d94c3~mv2_d_1544_1994_s_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_312735f74ee74be59c8a2452150d94c3~mv2_d_1544_1994_s_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-2 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_2a1b21e133294dd5b6247c62ac898ca8~mv2_d_2848_4288_s_4_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_2a1b21e133294dd5b6247c62ac898ca8~mv2_d_2848_4288_s_4_2.webp"
+                  />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,'2')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, '2')">&#10095;</a>
+              </div>
+              <h2 class="wrapper__season">Winter</h2>
+          </div>
+          </div>
+          <div class="wrapper__first">
+            <div class="wrapper__img">
+              <div class="slideshow-container">
+                <div class="mySlides mySlides-3 fade active">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_eb44a26d4407468aa18b75e0e2d2ab23~mv2_d_5544_3609_s_4_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_eb44a26d4407468aa18b75e0e2d2ab23~mv2_d_5544_3609_s_4_2.webp"
+                  />
+                </div>
+
+                <div class="mySlides mySlides-3 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_3a673029c6224e00b51e81469eef50c5~mv2_d_6016_4016_s_4_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_3a673029c6224e00b51e81469eef50c5~mv2_d_6016_4016_s_4_2.webp"
+                  />
+                </div>
+
+                <div class="mySlides mySlides-3 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_cb84349e33f14b86a653d2427b7906e4~mv2_d_2214_1938_s_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_cb84349e33f14b86a653d2427b7906e4~mv2_d_2214_1938_s_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-3 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_d114c18dfcc542098a1ed77811bf4b76~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_d114c18dfcc542098a1ed77811bf4b76~mv2_d_5184_3456_s_4_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-3 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_1aea1201836842eba1bdf6ac42d40cbc~mv2_d_3965_2832_s_4_2.jpg/v1/fill/w_448,h_447,fp_0.50_0.50,q_90/ad420a_1aea1201836842eba1bdf6ac42d40cbc~mv2_d_3965_2832_s_4_2.webp"
+                  />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,'3')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, '3')">&#10095;</a>
+              </div>
+                <h2 class="wrapper__season">Spring</h2>
+          </div>
+          </div>
+          <div class="wrapper__first">
+            <div class="wrapper__img">
+              <div class="slideshow-container">
+                <div class="mySlides mySlides-4 fade active">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_47ee5a5bac624a0cb441faedf520d087~mv2_d_2500_1662_s_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_47ee5a5bac624a0cb441faedf520d087~mv2_d_2500_1662_s_2.webp"
+                  />
+                </div>
+
+                <div class="mySlides mySlides-4 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_d7374f1d4f5748ab86cc1d789ffd705c~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_d7374f1d4f5748ab86cc1d789ffd705c~mv2_d_5760_3840_s_4_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-4 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_51efef84707c40079f7ec4cc72ceb15e~mv2_d_4272_2848_s_4_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_51efef84707c40079f7ec4cc72ceb15e~mv2_d_4272_2848_s_4_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-4 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_0f9b00b04e4041b5a7061e4eb72d0733~mv2_d_3024_4032_s_4_2.jpg/v1/fill/w_460,h_447,fp_0.50_0.50,q_90/ad420a_0f9b00b04e4041b5a7061e4eb72d0733~mv2_d_3024_4032_s_4_2.webp"
+                  />
+                </div>
+                <div class="mySlides mySlides-4 fade">
+                  <img
+                    src="https://static.wixstatic.com/media/ad420a_6cc4e8b82f74417c95aca4d531198a4c~mv2_d_5184_3456_s_4_2.jpg/v1/fill/w_460,h_447,fp_0.63_0.33,q_90/ad420a_6cc4e8b82f74417c95aca4d531198a4c~mv2_d_5184_3456_s_4_2.webp"
+                  />
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1,'4')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, '4')">&#10095;</a>
+              </div>
+                <h2 class="wrapper__season">Summer</h2>
+          </div>
+          </div>
+        </div>
+              
+      <div class="blog__contact">
+               <div class="blog__h2"> 
+                   <p class="blog__p"> 500 Terry Francois Street
+                                San Francisco, CA 94158
+                                info@mysite.co</br>
+                                Tel: 123-456-7890</br>
+                                Fax: 123-456-7890</p> 
+                            </div>
+                <div class="blog__h2">
+                    <div class="blog__title">Opening Hours</div>
+                    <p class="blog__p">Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm
+                </p>
+            </div>
+                <div class="blog__h2"><div class="blog__title">Delivery Hours</div>
+                <p class="blog__p">Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm</p>
+                </div>
+            </div>
+               </div>
+               
+        <div class="soc">
+            <h3 class="soc__text">Get the Latest News & </br>Updates from Our Farm</h3>
+            <form class="soc__form">
+               <p class="soc__enter">Enter your email here* *</p>
+            <input type="email" placeholder="Email" class="soc__email" />
+            <button class="soc__btn">Join</button>
+           </form> 
+       
+                </div>
+                <div class="footer">
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://twitter.com" target="_blank">TWITTER</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+                    </p>
+                </div>
+                <div class="year">
+                    <p class="year__p">© 2023 by Deerfield Farm. Proudly created with <a style="color: #fe8340;" href="https://uk.wix.com/" target="_blank" >Wix.com</a> </p>
+                </div>
+    </div>
+       </div>
+       </div>
+       <script src="./js/produce.js"></script>
+       <script src="./js/all.js"></script>
+  </body>
+</html>

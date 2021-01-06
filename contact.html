@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+            <nav class="nav__bar">
+                <button class="nav__toggle" id="toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                >
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                    d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                    />
+                </svg>
+                </button>
+                <div class="nav__first">
+                    <p class="text_first">Deerfield Farm</p>
+                    <p class="text_second">Season’s Best</p>
+                </div>
+                <div class="nav__container" id="navigation">
+                    <div class="nav__close" onclick="closeBurgerForm()">
+                        <img src="./svg/close.svg" alt="" >
+                    </div>
+                <ul class="nav__item">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li><a href="./about.html" class="nav__link ">About</a></li>
+                    <li><a href="./produce.html" class="nav__link">Our Produce</a></li>
+                    <li><a href="./blog.html" class="nav__link">Blog</a></li>
+                    <li><a href="./contact.html" class="nav__link_bottom activ">Contact Us</a></li>
+                </ul>
+          <a class="form" href="./sign.html">
+            <img
+              class="form__svg"
+              src="./svg/person_outline-black-18dp.svg"
+              alt=""
+            />
+            <span class="form__active">Log In</span>
+          </a>
+          </div>
+          <div class="target" onclick="showTargetForm()">
+            <img class="target__left" src="./svg/target.svg" alt="" />
+            <span class="target__span">JOIN US</span>
+          </div>
+          <div class="target__form">
+            <div class="target__close" onclick="closeTargetForm()">
+              <img src="./svg/close.svg" alt="" class="target__closesvg" />
+            </div>
+            <div class="target__title">Join Our Farm CSA Program</div>
+            <form class="target__formblock">
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your First Name</label>
+                <input class="target__input" placeholder="First Name" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Last Name</label>
+                <input class="target__input" placeholder="Last Name" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Email *</label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="target__input"
+                />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Phone</label>
+                <input class="target__input" placeholder="Your Phone" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your City</label>
+                <input class="target__input" placeholder="Your City" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your State</label>
+                <input
+                  type="text"
+                  class="target__input"
+                  placeholder="Your State"
+                />
+              </div>
+              <div class="target__radioblock">
+                <div class="target__group">Choose the package that Fits your Family *</div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar1" class="target__radio" name="radioform" value="1" />
+                  <label for="contacttar1" class="target__labelradio">Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar2" class="target__radio" name="radioform" value="2"/>
+                  <label for="contacttar2" class="target__labelradio">Bi-Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar3" class="target__radio" name="radioform" value="3"/>
+                  <label for="contacttar3" class="target__labelradio">Wholesome Family Package</label>
+                </div>
+              </div>
+              <div class="target__btn">
+                <button class="target__btntext">Submit</button>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="central" id="scroll">
+        <div class="central__img" id="showScroll"></div>
+      </div>
+      <div class="part">
+          <div class="part__left">
+                   <form class="part__form">
+                       <div class="part__tittle">For Any Inquiries,</br>
+Feel Free to Contact Us</div>
+                  <div class="part__inputtext">
+                <label class="part__label">Enter Your First Name</label>
+                <input class="part__input" placeholder="First Name" />
+              </div>
+              <div class="part__inputtext">
+                <label class="part__label">Enter Your Last Name</label>
+                <input class="part__input" placeholder="Last Name" />
+              </div>
+              <div class="part__inputtext">
+                <label class="part__label">Enter Your Email *</label>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="part__input"
+                />
+              </div>
+              <div class="part__inputtext">
+                <label class="part__label">Enter Your Phone</label>
+                <input class="part__input" placeholder="Your Phone" />
+              </div>
+              <div class="part__inputtextbig">
+                <label class="part__label">Type Your Message Here</label>
+                <input class="part__inputbig" />
+              </div>
+              <div class="part__btn">
+                <button class="part__btntext">Submit</button>
+              </div>
+            </form>
+            
+          </div>
+          <div class="part__right">
+              <img class="part__svg" src="./svg/contact__sec.svg" alt="">
+          </div>
+      </div>
+           <div class="blog">
+               <div class="blog__store">
+                 <div class="blog__storename">Where to Find Our Produce</div>
+                 <div class="blog__pic">
+                     <div class="blog__listpic">
+                        <div class="blog__picture"> <img src="https://static.wixstatic.com/media/ad420a_15135caada8e4e61b5c8d68a50a33eea~mv2.png/v1/fill/w_200,h_200,al_c,q_85/logos-02.webp" alt=""></div>
+                        <div class="blog__picture"><img src="https://static.wixstatic.com/media/ad420a_0b3bc4f4800f494b87db29a25674fe71~mv2.png/v1/fill/w_134,h_134,al_c,q_85,usm_0.66_1.00_0.01/logos-01.webp" alt=""></div>
+                        <div class="blog__picture"> <img src="https://static.wixstatic.com/media/ad420a_ef9928ab1cd646c8a4eb4305eaa5268f~mv2.png/v1/fill/w_200,h_200,al_c,q_85/logos-03.webp" alt=""></div>
+                        <div class="blog__picture"> <img src="https://static.wixstatic.com/media/ad420a_628943c2fa11424da320a2a39e52501c~mv2.png/v1/fill/w_175,h_175,al_c,q_85,usm_0.66_1.00_0.01/logos-04.webp" alt=""></div>
+                     </div>
+                 </div>
+               </div>
+                    <div class="blog__contact">
+               <div class="blog__h2"> 
+                   <p class="blog__p"> 500 Terry Francois Street
+                                San Francisco, CA 94158
+                                info@mysite.co</br>
+                                Tel: 123-456-7890</br>
+                                Fax: 123-456-7890</p> 
+                            </div>
+                <div class="blog__h2">
+                    <div class="blog__title">Opening Hours</div>
+                    <p class="blog__p">Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm
+                </p>
+            </div>
+                <div class="blog__h2"><div class="blog__title">Delivery Hours</div>
+                <p class="blog__p">Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm</p>
+                </div>
+            </div>
+               </div>
+               
+        <div class="soc">
+            <h3 class="soc__text">Get the Latest News & </br>Updates from Our Farm</h3>
+            <form class="soc__form">
+              <p class="soc__enter">Enter your email here* *</p>
+            <input type="email" placeholder="Email" class="soc__email" />
+            <button class="soc__btn">Join</button>
+           </form> 
+        
+                </div>
+                <div class="footer">
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://twitter.com" target="_blank">TWITTER</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+                    </p>
+                </div>
+                <div class="year">
+                    <p class="year__p">© 2023 by Deerfield Farm. Proudly created with <a style="color: #fe8340;" href="https://uk.wix.com/" target="_blank" >Wix.com</a> </p>
+                </div>
+    </div>
+      </div>
+    </div>
+    <script src="./js/contact.js"></script>
+    <script src="./js/all.js"></script>
+  </body>
+</html>

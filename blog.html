@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+  <body>
+      <div class="container">
+      <div class="nav">
+            <nav class="nav__bar">
+                <button class="nav__toggle" id="toggle">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                >
+                    <path  d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                    d="M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z"
+                    />
+                </svg>
+                </button>
+                <div class="nav__first">
+                    <p class="text_first">Deerfield Farm</p>
+                    <p class="text_second">Season’s Best</p>
+                </div>
+                <div class="nav__container" id="navigation">
+                    <div class="nav__close" onclick="closeBurgerForm()">
+                        <img src="./svg/close.svg" alt="">
+                    </div>
+                <ul class="nav__item">
+                    <li><a href="./index.html" class="nav__link">Home</a></li>
+                    <li><a href="./about.html" class="nav__link ">About</a></li>
+                    <li><a href="./produce.html" class="nav__link">Our Produce</a></li>
+                    <li><a href="./blog.html" class="nav__link activ">Blog</a></li>
+                    <li><a href="./contact.html" class="nav__link_bottom">Contact Us</a></li>
+                </ul>
+          <a class="form" href="./sign.html">
+            <img
+              class="form__svg"
+              src="./svg/person_outline-black-18dp.svg"
+              alt=""
+            />
+            <span class="form__active">Log In</span>
+          </a>
+          </div>
+          <div class="target" onclick="showTargetForm()">
+            <img class="target__left" src="./svg/target.svg" alt="" />
+            <span class="target__span">JOIN US</span>
+          </div>
+          <div class="target__form">
+            <div class="target__close" onclick="closeTargetForm()"><img src="./svg/close.svg" alt="" class="target__closesvg"></div>
+            <div class="target__title">Join Our Farm CSA Program
+            </div>
+            <form class="target__formblock">
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your First Name</label>
+                <input class="target__input" placeholder="First Name"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Last Name</label>
+                <input class="target__input"placeholder="Last Name"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Email *</label>
+                <input type="email" placeholder="Your Email" class="target__input" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your Phone</label>
+                <input class="target__input"placeholder="Your Phone"/>
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your City</label>
+                <input class="target__input"placeholder="Your City" />
+              </div>
+              <div class="target__inputtext">
+                <label class="target__label">Enter Your State</label>
+                <input type="text" class="target__input" placeholder="Your State"/>
+              </div>
+              <div class="target__radioblock">
+                <div class="target__group">Choose the package that Fits your Family *</div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar1" class="target__radio" name="radioform" value="1" />
+                  <label for="contacttar1" class="target__labelradio">Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar2" class="target__radio" name="radioform" value="2"/>
+                  <label for="contacttar2" class="target__labelradio">Bi-Weekly Share</label>
+                </div>
+                <div class="target__inputradio">
+                  <input type="radio" id="contacttar3" class="target__radio" name="radioform" value="3"/>
+                  <label for="contacttar3" class="target__labelradio">Wholesome Family Package</label>
+                </div>
+              </div>
+              <div class="target__btn">
+              <button class="target__btntext">Submit</button>
+            </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="greenzona">
+        <div class="greenzona__cont"> 
+                  <h2 class="greenzona__h2">Our Blog</h2>
+                       </div>
+                 </div>
+                  <div class="allitems">
+                    <div class="allitems__wrapper">
+                      <div class="allitems__nav">
+                      <ul class="allitems__navbar">
+                  <li><a href="" class="allitems__link">All Posts</a></li>
+                  <li><a href="" class="allitems__link">News</a></li>
+                 <li><a href="" class="allitems__link">Recipes</a></li>
+                <li><a href="" class="allitems__link active">Events</a></li>
+                      </ul>
+                 <form class="search">
+  <input class="search__input" type="text" placeholder="Search...">
+  <button class="search__button" type="submit"><img src="./svg/search.svg" alt=""></button>
+</form>   
+          </div>
+          <div class="allitems__fotos">
+                  <div class="allitems__items">
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_a6917e35f02241c4801a874aab820004~mv2_d_4896_2754_s_4_2.jpg/v1/fit/w_294,h_165,al_c,q_80/file.webp') ;"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">New in the Basket: Seasonal Additions</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_04601c61916d4f2aa921752f35c7b4bd~mv2_d_5334_4000_s_4_2.jpg/v1/fit/w_290,h_218,al_c,q_80/file.webp') ;"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">Crispy Kale Salad</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_bc9e0090ba934790aa23d055e3299caa~mv2_d_5472_3648_s_4_2.jpg/v1/fit/w_290,h_194,al_c,q_80/file.webp') ;"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">Urban Garden Workshop</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_b88d766ec2e64b04bb17b174daf72b81~mv2_d_3130_2075_s_2.jpg/v1/fit/w_290,h_193,al_c,q_80/file.webp') ;"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">Farm Tour: Get to Know the Land</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_2e514a5350e54d68b59a21bdf059d94c~mv2_d_3532_5298_s_4_2.jpg/v1/fit/w_290,h_435,al_c,q_80/file.webp') ;"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">Pumpkin Carving Festival</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_85b6ea6977a64649822243e64125eb13~mv2_d_6720_4480_s_4_2.jpg/v1/fit/w_290,h_194,al_c,q_80/file.webp') ;"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">Sweet Potato Fries</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_8b789e0eed154212a22daf4f6e73e7f2~mv2_d_2000_3000_s_2.jpg/v1/fit/w_290,h_435,al_c,q_80/file.webp') ;"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">Creamy Pumpkin Soup</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_ec346fdd050f4a41856cd96be2588520~mv2_d_3088_2048_s_2.jpg/v1/fit/w_290,h_193,al_c,q_80/file.webp');"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">CTips for Your Herb Garden</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="allitems__item">
+                        <div class="item__first" style="background-image: url('https://static.wixstatic.com/media/ad420a_33a9ce7e6c574b3cb1ad91248a0a4d03~mv2_d_2848_4288_s_4_2.jpeg/v1/fit/w_290,h_437,al_c,q_80/file.webp');"></div>
+                       <div class="allitems__list"> 
+                           <p class="item__text">Avocado Season Is Here</p>
+                            <div class="item__com">
+                                <div class="item__com2">
+                                    <img src="./svg/blog.svg" alt="" class="item__svg">
+                                     <p class="item__coment">Write a comment</p>
+                                </div>
+                                <div class="item__like">
+                                <img src="./svg/heart.svg" alt="" class="item__svg">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    </div>
+                  <div class="blog__contact">
+               <div class="blog__h2"> 
+                   <p class="blog__p"> 500 Terry Francois Street
+                                San Francisco, CA 94158
+                                info@mysite.co</br>
+                                Tel: 123-456-7890</br>
+                                Fax: 123-456-7890</p> 
+                            </div>
+                <div class="blog__h2">
+                    <div class="blog__title">Opening Hours</div>
+                    <p class="blog__p">Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm
+                </p>
+            </div>
+                <div class="blog__h2"><div class="allitems__title">Delivery Hours</div>
+                <p class="blog__p">Mondays : 8am - 1pm
+                Wednesdays: 8am - 1pm
+                Fridays: 8am - 1pm</p>
+                </div>
+            </div>
+               </div>
+               
+        <div class="soc">
+            <h3 class="soc__text">Get the Latest News & </br>Updates from Our Farm</h3>
+            <form class="soc__form">
+               <p class="soc__enter">Enter your email here* *</p>
+            <input type="email" placeholder="Email" class="soc__email" />
+            <button class="soc__btn">Join</button>
+           </form> 
+       
+                </div>
+                <div class="footer">
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.facebook.com" target="_blank">FACEBOOK</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://twitter.com" target="_blank">TWITTER</a>
+                    </p>
+                    <p class="footer__links">
+                        <a class="footer__link" href="https://www.instagram.com" target="_blank">INSTAGRAM</a>
+                    </p>
+                </div>
+                <div class="year">
+                    <p class="year__p">© 2023 by Deerfield Farm. Proudly created with <a style="color: #fe8340;" href="https://uk.wix.com/" target="_blank" >Wix.com</a> </p>
+                </div>
+    </div>
+       </div>
+       </div>
+<script src="./js/all.js"></script>
+  </body>
+</html>
